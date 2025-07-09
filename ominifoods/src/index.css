@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html {
+  font-size: 10px; 
+} */
+
+
+
+/* .grid{
+  display: grid;
+  gap: 9.6rem;
+} */
+@layer components { 
+  html {
+    /* 10/16 = 0.625 = 62.5% */
+    font-size: 62.5%;
+  }
+
+  @media(max-width:75rem){
+    html{
+      /* 9/16= 0.5625=56.25% */
+      font-size:56.25%;
+    }
+  }
+  @media(max-width:62rem){
+    html{
+      /* 9/16= 0.5625=56.25% */
+      font-size:50%;
+    }
+  }
+
+  *:focus{
+    outline: none;
+    /* border: 1px solid #45260a; */
+    box-shadow: 0 0 0 0.8rem hsla(28, 80%, 52%, 0.791);
+  }
+
+  .grid--2-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid--3-col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+  }
+
+  /* psudo element */
+  .step-img::before {
+    content: "";
+    display: block;
+    width: 60%;
+    /* height: 60%; */ 
+    padding-bottom: 60%;
+    background-color: #fdf2ed;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    /* transform: translate(50%,-50%); */
+  }
+
+  .step-img::after{
+    content: "";
+    display: block;
+    width: 45%;
+    padding-bottom: 45%;
+    background-color: #fae5d3;
+    border-radius: 50%;
+    position: absolute; 
+    z-index: -1;
+  }
+
+  .icon{
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  strong{
+    font-weight: 500;
+  }
+  .meal-con{
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  }
+  .cta-shadow{
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  }
+  .cta-bgImg{
+    background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.3), hsla(28, 80%, 52%, 0.3)),url('img/eating.jpg'); 
+  }
+
+  .formLabel{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    display: block;
+  }
+  .forminput{
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    border: none;
+    background-color:#fdf2e9;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.10);
+    color: inherit;
+  }
+  .forminput::placeholder{
+    color: #aaa;
+  }
+
+  .best::after{
+    content:"Best value";
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    position: absolute;
+    background-color: #ffd43b;
+    padding: 0.4rem 8rem;
+    top:6%;
+    right: -15%;
+    /* transform: translate(50%,-50%); */    
+    transform: rotate(45deg);
+  }
+}
+
+.list-icon{
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
+
+
+/* !note 
+? the 1st break poing is a 1350 so = 1350/16= 84em
+!next bp
+? the next bp is at 1200px so= 1200/16= 75em
+! next bp
+? the next bl is at 997px so 997/16 =62em
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
