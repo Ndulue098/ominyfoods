@@ -47,29 +47,29 @@ function Nav() {
       <nav className="minTablet:hidden">
         <ul className="flex space-x-[4.8rem] text-[1.8rem] font-medium">
           <li>
-            <a className="hover:text-[#cf711f]" href="#work">
+            <a className="hover:text-[#cf711f]" href="#works">
               How it works
             </a>
           </li>
           <li>
-            <a className="hover:text-[#cf711f]" href="#">
+            <a className="hover:text-[#cf711f]" href="#meal">
               Meals
             </a>
           </li>
           <li>
-            <a className="hover:text-[#cf711f]" href="#">
+            <a className="hover:text-[#cf711f]" href="#testimony">
               Testimonials
             </a>
           </li>
           <li>
-            <a className="hover:text-[#cf711f]" href="#">
+            <a className="hover:text-[#cf711f]" href="#price">
               Pricing
             </a>
           </li>
           <li>
             <a
               className="py-[1.2rem] px-[2.4rem] rounded-xl text-white bg-[#e67e22] hover:bg-[#cf711f] transition-all"
-              href="#"
+              href="#cta"
             >
               Try for free
             </a>
@@ -94,7 +94,7 @@ function Nav() {
               <a
                 onClick={() => setOpenNav(false)}
                 className="hover:text-[#cf711f]"
-                href="#"
+                href="#meal"
               >
                 Meals
               </a>
@@ -103,7 +103,7 @@ function Nav() {
               <a
                 onClick={() => setOpenNav(false)}
                 className="hover:text-[#cf711f]"
-                href="#"
+                href="#testimony"
               >
                 Testimonials
               </a>
@@ -112,7 +112,7 @@ function Nav() {
               <a
                 onClick={() => setOpenNav(false)}
                 className="hover:text-[#cf711f]"
-                href="#"
+                href="#price"
               >
                 Pricing
               </a>
@@ -121,7 +121,7 @@ function Nav() {
               <a
                 onClick={() => setOpenNav(false)}
                 className="py-[1.2rem] px-[2.4rem] rounded-xl text-white bg-[#e67e22] hover:bg-[#cf711f] transition-all"
-                href="#"
+                href="#cta"
               >
                 Try for free
               </a>
@@ -241,7 +241,7 @@ function Featured() {
 
 function HowItWorks() {
   return (
-    <section className="py-[9.6rem] text-[#333]">
+    <section id="works" className="py-[9.6rem] text-[#333]">
       <div className="max-w-[130rem] mx-auto px-[3.2rem] minTablet:px-[2.4rem]">
         <span className="tracking-[0.75px] text-[1.8rem] font-medium text-[#cf711f] uppercase mb-[1.6rem] block text-center minTablet:text-[1.6rem]">
           How it works
@@ -325,7 +325,7 @@ function HowItWorks() {
 
 function Meals() {
   return (
-    <section className="py-[9.6rem]">
+    <section id="meal" className="py-[9.6rem]">
       <div className="container text-center">
         <span className="tracking-[0.75px] text-[1.8rem] font-medium text-[#cf711f] uppercase mb-[1.6rem] block minTablet:text-[1.6rem]">
           Meals
@@ -429,7 +429,7 @@ function Meals() {
 }
 function Testimonials() {
   return (
-    <section className="grid grid-cols-[55fr_45fr] items-center bg-[#fdf2e9] minTablet:grid-cols-1">
+    <section id="testimony" className="grid grid-cols-[55fr_45fr] items-center bg-[#fdf2e9] minTablet:grid-cols-1">
       {/* Text + Testimonials */}
       <div className="p-[9.6rem] tablet:px-[3.2rem] minTablet:py-[6.4rem]">
         <span className="tracking-[0.75px] text-[1.8rem] font-medium text-[#cf711f] uppercase mb-[1.6rem] block minTablet:text-[1.6rem]">
@@ -520,7 +520,7 @@ function GallsryImage({ imgSrc, imgAlt }) {
 
 function PricingandFeatures() {
   return (
-    <section className="py-[9.6rem]">
+    <section id="price" className="py-[9.6rem]">
       <div className="container text-center">
         <span className="tracking-[0.75px] text-[1.8rem] font-medium text-[#cf711f] uppercase mb-[1.6rem] block">
           Pricing
@@ -612,7 +612,7 @@ function PricingandFeatures() {
 }
 function CallToAction() {
   return (
-    <section className="py-[4.8rem] pb-[12.8rem]">
+    <section id="cta" className="py-[4.8rem] pb-[12.8rem]">
       <div className="container">
         <div className="cta-shadow overflow-hidden grid grid-cols-[2fr_1fr] rounded-xl bg-gradient-to-b from-[#eb9846] to-[#e67e22] minTablet:grid-cols-1">
           {/* Left: Text + Form */}
